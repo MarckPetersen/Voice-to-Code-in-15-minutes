@@ -1,0 +1,29 @@
+Feature: Navigation Bar for Portfolio Website
+  As a website user
+  I want a navigation bar at the top of the page
+  So that I can quickly navigate to different sections of the website
+
+  Scenario: Navigation to the "About Me" section
+    Given the user is on the homepage
+    When the user clicks on "About Me" in the navigation bar
+    Then the page should scroll to the "About Me" section
+
+  Scenario: Navigation to the "Projects" section
+    Given the user is on the homepage
+    When the user clicks on "Projects" in the navigation bar
+    Then the page should scroll to the "Projects" section
+
+  Scenario: Navigation to the "Favorite Links" section
+    Given the user is on the homepage
+    When the user clicks on "Favorite Links" in the navigation bar
+    Then the page should scroll to the "Favorite Links" section
+
+  Scenario: Navigation to the "Embedded Media" section
+    Given the user is on the homepage
+    When the user clicks on "Embedded Media" in the navigation bar
+    Then the page should scroll to the "Embedded Media" section
+
+  Scenario: Sticky navigation bar
+    Given the user is on any part of the website
+    When they scroll up or down the page
+    Then the navigation bar should remain visible at the top of the page
