@@ -54,3 +54,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.media-photo {
+    max-width: 50%; /* Resize images to a maximum of 50% of their original size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Provide some space between images */
+}
