@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Gherkin Syntax for Navigation Requirements -->
+    <!--
+    Feature: Navigation Bar for Portfolio Website
+      As a website user
+      I want a navigation bar at the top of the page
+      So that I can quickly navigate to different sections of the website
+
+      Scenario: Navigation to the "About Me" section
+        Given the user is on the homepage
+        When the user clicks on "About Me" in the navigation bar
+        Then the page should scroll to the "About Me" section
+
+      Scenario: Navigation to the "Projects" section
+        Given the user is on the homepage
+        When the user clicks on "Projects" in the navigation bar
+        Then the page should scroll to the "Projects" section
+
+      Scenario: Navigation to the "Favorite Links" section
+        Given the user is on the homepage
+        When the user clicks on "Favorite Links" in the navigation bar
+        Then the page should scroll to the "Favorite Links" section
+
+      Scenario: Navigation to the "Embedded Media" section
+        Given the user is on the homepage
+        When the user clicks on "Embedded Media" in the navigation bar
+        Then the page should scroll to the "Embedded Media" section
+
+      Scenario: Sticky navigation bar
+        Given the user is on any part of the website
+        When they scroll up or down the page
+        Then the navigation bar should remain visible at the top of the page
+    -->
     <header>
         <div class="menu-bar">
             <nav>
@@ -26,7 +58,27 @@
             <p>Hello! I'm Marck, a passionate developer with over 30 years of experience in quality assurance and test management...</p>
             <img src="assets/marck-portrait.jpg" alt="Marck Portrait">
         </section>
-        <!-- Additional sections follow -->
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Exploring new creative experiments such as the "Voice to Code in 15 minutes" project, where I use voice commands to create and deploy code, revolutionizing how we think about programming and problem-solving. Follow my progress on GitHub!</p>
+            <img src="assets/project-snapshot.jpg" alt="Project Snapshot">
+        </section>
+
+        <section id="links">
+            <h2>Favorite Links</h2>
+            <p>Here are some resources and tools I frequently use and recommend to every software professional:</p>
+            <img src="assets/links-image.jpg" alt="Useful Links">
+        </section>
+
+        <section id="media">
+            <h2>Embedded Media</h2>
+            <p>Check out some videos and images from recent conferences I've spoken at or projects I've showcased:</p>
+            <video controls>
+                <source src="assets/conference-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
     </main>
 
     <footer>
