@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Gherkin Syntax (requirements for navigation bar)
+    Feature: Navigation Bar for Portfolio Website
+      As a website user
+      I want a navigation bar at the top of the page
+      So that I can quickly navigate to different sections of the website
+
+      Scenario: Navigation to the "About Me" section
+        Given the user is on the homepage
+        When the user clicks on "About Me" in the navigation bar
+        Then the page should scroll to the "About Me" section
+
+      Scenario: Navigation to the "Projects" section
+        Given the user is on the homepage
+        When the user clicks on "Projects" in the navigation bar
+        Then the page should scroll to the "Projects" section
+
+      Scenario: Navigation to the "Favorite Links" section
+        Given the user is on the homepage
+        When the user clicks on "Favorite Links" in the navigation bar
+        Then the page should scroll to the "Favorite Links" section
+
+      Scenario: Navigation to the "Embedded Media" section
+        Given the user is on the homepage
+        When the user clicks on "Embedded Media" in the navigation bar
+        Then the page should scroll to the "Embedded Media" section
+
+      Scenario: Sticky navigation bar
+        Given the user is on any part of the website
+        When they scroll up or down the page
+        Then the navigation bar should remain visible at the top of the page
+    -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#links">Favorite Links</a></li>
+                <li><a href="#media">Embedded Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! I'm [Your Name], a passionate developer. Welcome to my portfolio site!</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1: <a href="#">Project Link</a></li>
+                <li>Project 2: <a href="#">Project Link</a></li>
+            </ul>
+        </section>
+
+        <section id="links">
+            <h2>Favorite Links</h2>
+            <ul>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+            </ul>
+        </section>
+
+        <section id="media">
+            <h2>Embedded Media</h2>
+            <img src="assets/example.jpg" alt="Example Image">
+            <video controls>
+                <source src="assets/example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
